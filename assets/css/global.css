@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font: var(--text-body);
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+  --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+  --Blue-200: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Blue-850: hsl(228, 56%, 26%);
+  --Blue-950: hsl(229, 57%, 11%);
+
+  --raleway-font: 'Raleway', sans-serif;
+
+  --text-ft: 700 2rem/150% var(--raleway-font);
+  --text-body: 400 1rem/150% var(--raleway-font);
+}

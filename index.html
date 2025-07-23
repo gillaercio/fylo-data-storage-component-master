@@ -4,31 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Fylo data storage component</title>
 
-
+  <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
 
-  <header>
-    <img src="assets/images/logo.svg" alt="Fylo Logo">
-    <div>
-      <img src="assets/images/icon-document.svg" alt="Icon document">
-      <img src="assets/images/icon-folder.svg" alt="Icon folder">
-      <img src="assets/images/icon-upload.svg" alt="Icon upload">
-    </div>
-  </header>
-
-  <section>
-    <p>You’ve used <span>815 GB</span> of your storage</p>
-    <p>185 <span>GB Left</span></p>
+  <main id="content">
+    <header id="storage-header">
+      <img src="assets/images/logo.svg" alt="Fylo Logo" class="logo">
+      <div class="icon-group">
+        <div class="icon-box">
+          <img src="assets/images/icon-document.svg" alt="Icon document" class="icon">
+        </div>
+        <div class="icon-box">
+          <img src="assets/images/icon-folder.svg" alt="Icon folder" class="icon">
+        </div>
+        <div class="icon-box">
+          <img src="assets/images/icon-upload.svg" alt="Icon upload" class="icon">
+        </div>
+      </div>
+    </header>
+    <section id="storage-info">
+      <p class="storage-used">You’ve used <span class="highlight">815 GB</span> of your storage</p>
     
-    0 GB
-    <input type="range" name="" id="">
-    1000 GB
-  </section>
+      <div class="storage-bar-container">
+        <span class="storage-min">0 GB</span>
+        <input type="range" name="" id="storage-progress">
+        <span class="storage-max">1000 GB</span>
+      </div>
+      <p class="storage-left">
+        <span class="remaining-amount">185 </span>GB Left
+      </p>
+    </section>
+  </main>
 
 </body>
 </html>
