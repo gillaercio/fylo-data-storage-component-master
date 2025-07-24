@@ -28,16 +28,31 @@
       </div>
     </header>
     <section id="storage-info">
-      <p class="storage-used">You’ve used <span class="highlight">815 GB</span> of your storage</p>
+      <p class="storage-used">
+        You’ve used <span class="highlight">815 GB</span> of your storage
+      </p>
     
       <div class="storage-bar-container">
-        <span class="storage-min">0 GB</span>
-        <input type="range" name="" id="storage-progress">
-        <span class="storage-max">1000 GB</span>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+        <div class="storage-values">
+          <!-- <div class="storage-min">0 <span class="highlight">GB</span>
+          </div>
+          <div class="storage-max">1000 <span class="highlight">GB</span>
+          </div> -->
+          <span>0 GB</span>
+          <span>1000 GB</span>
+        </div>
+      <!-- </div> -->
+      <!-- <p class="storage-left">
+        <span class="remaining-amount">185 </span>
+        <span class="highlight">GB Left</span>
+      </p> -->
+        <div class="storage-left">
+          <strong>185</strong> GB Left
+        </div>
       </div>
-      <p class="storage-left">
-        <span class="remaining-amount">185 </span>GB Left
-      </p>
     </section>
   </main>
 

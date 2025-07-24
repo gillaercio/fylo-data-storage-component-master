@@ -6,7 +6,6 @@
 
 html {
   font-size: 62.5%;
-  font: var(--text-body);
 }
 
 @font-face {
@@ -15,7 +14,7 @@ html {
 }
 
 :root {
-  --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+  --Gradient: linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
   --Blue-200: hsl(243, 100%, 93%);
   --Grayish-Blue: hsl(229, 7%, 55%);
   --Blue-850: hsl(228, 56%, 26%);
@@ -23,6 +22,8 @@ html {
 
   --raleway-font: 'Raleway', sans-serif;
 
-  --text-ft: 700 2rem/150% var(--raleway-font);
-  --text-body: 400 1rem/150% var(--raleway-font);
+  --text-ft: 700 2.8rem/150% var(--raleway-font);
+  --small-text-body: 700 1.1rem/150% var(--raleway-font);
+  --text-body: 400 1.3rem/150% var(--raleway-font);
+  --text-body-ft: 700 1.3rem/150% var(--raleway-font);
 }
