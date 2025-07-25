@@ -10,7 +10,7 @@ html {
 
 @font-face {
   font-family: 'Raleway';
-  src: url('./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+  src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
 }
 
 :root {
@@ -22,8 +22,9 @@ html {
 
   --raleway-font: 'Raleway', sans-serif;
 
-  --text-ft: 700 2.8rem/150% var(--raleway-font);
-  --small-text-body: 700 1.1rem/150% var(--raleway-font);
-  --text-body: 400 1.3rem/150% var(--raleway-font);
-  --text-body-ft: 700 1.3rem/150% var(--raleway-font);
+  --text-sm: 500 1.2rem/150% var(--raleway-font);
+  --text-sm-ft: 700 1.2rem/150% var(--raleway-font);
+  --text: 500 1.4rem/150% var(--raleway-font);
+  --text-ft: 700 1.4rem/150% var(--raleway-font);
+  --text-lg-ft: 700 4rem/150% var(--raleway-font);
 }
