@@ -220,8 +220,4 @@ body {
     font-size: 1.2em;
     padding: 1rem 2rem;
   }
-
-  .storage-left::after {
-    left: 95%;
-  }
 }
