@@ -2,7 +2,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: hsl(229, 57%, 11%);
+  background-color: hsl(229, 57%, 11%);
   color: white;
 }
 
@@ -11,7 +11,7 @@ body {
   height: 100vh;
   /* width: 320px; */
   max-width: 375px;
-  background: url(/assets/images/bg-mobile.png) no-repeat center center;
+  background: url(/assets/images/bg-mobile.png) no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -25,7 +25,7 @@ body {
   background-color: var(--Blue-850);
   padding: 4rem;
   border-radius: 1rem;
-  border-top-right-radius: 8rem;
+  border-top-right-radius: 10rem;
 }
 
 .logo {
@@ -61,7 +61,7 @@ body {
 .storage-used {
   font: var(--text);
   color: var(--Grayish-Blue);
-  margin-bottom: 1.5rem;
+  margin-block: 1.5rem;
   text-align: center;
 }
 
@@ -137,27 +137,30 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    align-content: flex-end;
+    height: 100vh;
+  }
+
   #content {
-    /* width: 100%; */
-    background:
-      hsl(229, 57%, 11%)
-      linear-gradient(to bottom, hsl(229, 57%, 11%) 50%, transparent 50%),
-      url(/assets/images/bg-desktop.png) no-repeat center bottom;
-    background-size: cover;
+    background-image: url(/assets/images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
     background-position: center bottom;
     flex-direction: row;
+    gap: 3rem;
     align-items: center;
     max-width: 1024px;
   }
 
   #storage-header {
     width: 35%;
-    justify-self: flex-end;
   }
 
   #storage-info {
     width: 50%;
-    margin-top: 5rem;
+    margin-top: 4.8rem;
   }
 
   .storage-used {
@@ -179,7 +182,7 @@ body {
   .storage-left::after {
     content: '';
     position: absolute;
-    bottom: -13px;
+    bottom: -18px;
     left: 94%;
     transform: translateX(-50%);
     border-width: 10px;
@@ -187,9 +190,38 @@ body {
     border-color: white white transparent
      transparent;
   }
+}
 
-  .storage-left strong {
-    color: var(--Blue-950);
-    font: var(--text-lg-ft);
+@media screen and (min-width: 1440px) {
+  #content {
+    max-width: 1440px;
+  }
+
+  #storage-header {
+    width: 25%;
+  }
+
+  #storage-info {
+    margin-top: 3.6rem;
+  }
+
+  .storage-used {
+    padding-left: 2.7rem;
+    font-size: clamp(1.4rem, 1.2rem + 1.666vw, 2rem);
+  }
+  
+  .storage-values {
+    font-size: clamp(1.2rem, 1rem + 1.666vw, 1.5rem);
+  }
+
+  .storage-left {
+    left: 72%;
+    top: -12rem;
+    font-size: 1.2em;
+    padding: 1rem 2rem;
+  }
+
+  .storage-left::after {
+    left: 95%;
   }
 }
